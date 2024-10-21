@@ -1,4 +1,15 @@
 import React from "react";
+import image1 from "../assets/images/img1.png"
+import image2 from "../assets/images/img2.png"
+import image3 from "../assets/images/img3.png"
+import image4 from "../assets/images/img4.png"
+import image5 from "../assets/images/img5.png"
+import image6 from "../assets/images/img6.png"
+import image7 from "../assets/images/img7.png"
+import top from "../assets/images/top.png"
+import bottom from "../assets/images/bottom.png"
+import footer from "../assets/images/footer.png"
+
 
 const Homepage = () => {
   return (
@@ -24,7 +35,7 @@ const Homepage = () => {
   {/* Character Image */}
   <div className="relative w-72 h-72 md:w-[700px] md:h-[500px] z-20 self-center">
     <img
-      src="src/assets/images/img1.png" // Replace with actual path
+      src={image1} 
       alt="ANCY PEOSI"
       className="w-[900px] h-[700px]"
     />
@@ -66,14 +77,14 @@ const Homepage = () => {
         <div 
   className="absolute top-[-7%] left-0 w-full h-1/2 z-30 bg-cover bg-top bg-no-repeat"
   style={{
-    backgroundImage: `url('src/assets/images/bottom.svg')`
+    backgroundImage: `url(${top})` 
   }}
 />
  {/* Bottom Image */}
 <div 
   className="absolute top-[41%] left-0 w-screen h-80 z-30 bg-cover bg-top bg-no-repeat -scale-y-90 "
   style={{
-    backgroundImage: `url('src/assets/images/top.png')`
+    backgroundImage: `url(${bottom})`
   }}
 />
 
@@ -95,7 +106,7 @@ const Homepage = () => {
             {/* Image on the Left */}
             <div className="w-32 h-32 md:w-[300px] md:h-[300px] overflow-hidden">
               <img
-                src="src/assets/images/img5.png" // Replace with actual path
+                src={image5} // Replace with actual path
                 alt="About Image"
                 className="w-full h-full object-cover"
               />
@@ -158,7 +169,7 @@ const Homepage = () => {
     {/* Image Section on the Right */}
     <div className=" absolute right-[26%] top-10 w-32 h-32 md:w-[300px] md:h-[300px] rounded-full overflow-hidden">
       <img
-        src="src/assets/images/img2.png" 
+        src={image2}
         alt="Why Image"
         className="w-full h-full object-cover border-2 border-black"
       />
@@ -201,7 +212,7 @@ const Homepage = () => {
   <div className="absolute top-[20%] left-[43%] transform -translate-x-1/2 z-20">
     <div className="w-32 h-32 md:w-[300px] md:h-[300px] overflow-hidden">
       <img 
-        src="src/assets/images/img3.png"
+        src={image3}
         alt="About Image"
         className="w-full h-full object-cover rounded-full border-2 border-black"
       />
@@ -244,9 +255,9 @@ const Homepage = () => {
 
   <div className="z-20 absolute top-[80%] right-[26%] ">
   <div className="z-20 mt-5 flex justify-center relative">
-  <img src="src/assets/images/img7.png" alt="placeholder" className="w-20" />
+  <img src={image7} alt="placeholder" className="w-20" />
   <img 
-    src="src/assets/images/img6.png" 
+    src={image6} 
     alt="placeholder" 
     className="w-20 absolute top-0 right-[40%]"
   />
@@ -263,7 +274,7 @@ const Homepage = () => {
        <div 
   className="absolute left-0 top-0 w-screen h-screen z-10 bg-cover bg-top bg-no-repeat shadow-lg shadow-gray-600"
   style={{
-    backgroundImage: `url('src/assets/images/footer.png')`
+    backgroundImage:`url(${footer})` 
   }}
 />
    {/* Third Vertical Line with Footer Section */}
@@ -279,7 +290,7 @@ const Homepage = () => {
   {/* Image on Top of the Vertical Line */}
   <div className="absolute top-[80%] w-32 h-32 md:w-[300px] md:h-[300px] overflow-hidden z-20">
     <img
-      src="src/assets/images/img4.png" 
+      src={image4} 
       alt="Supply Image"
       className="w-full h-full object-cover rounded-full border-2 border-black"
     />
@@ -298,12 +309,12 @@ const Homepage = () => {
 
     <section className="relative flex flex-col items-center mt-20 h-dvh py-16 px-4 md:px-16 text-white">
   {/* Disclaimer Text */}
-  <div className="relative z-20 mt-[75%] text-center max-w-lg mx-auto"> {/* Adjusted margin-top from 65% to 75% */}
+  <div className="relative z-20 mt-[75%] text-center max-w-lg mx-auto"> 
     <p className="text-lg text-white">
       Disclaimer: This is a fictional project and is not affiliated with any real politician or financial entities. All content is satirical.
     </p>
   </div>
-  <img src="src/assets/images/img5.png" alt="" className="w-20 z-20" />
+  <img src={image5} alt="" className="w-20 z-20" />
   
   {/* Footer Heading */}
   <footer className="text-center p-4 text-sm text-white z-30">
